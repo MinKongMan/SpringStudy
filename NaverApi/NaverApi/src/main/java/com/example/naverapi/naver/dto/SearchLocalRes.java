@@ -16,7 +16,6 @@ public class SearchLocalRes { // 출력 결과 중 몇개 변수만 가져 올 �
     private int total;
     private int start;
     private int display;
-    private String category;
     private List<SearchLocalItem> items;
     //Api 문서에 item에 포함되는 항목들을 만들어 준다
 
@@ -30,6 +29,7 @@ public class SearchLocalRes { // 출력 결과 중 몇개 변수만 가져 올 �
         private String telephone;
         private String address;
         private String roadAddress;
+        private String category;
         private int mapx;
         private int mapy;
     }

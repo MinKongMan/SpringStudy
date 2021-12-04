@@ -29,6 +29,7 @@ public class NaverClient {
     @Value("${naver.url.search.image}")
     private String Img;
 
+
     public SearchLocalRes localSearch(SearchLocalReq req){
         var uri = UriComponentsBuilder.fromUriString(localUrl)
                 .queryParams(req.toMultiValueMap()) //쿼리를 SearchLocalReq에서 미리 만들어 줌
