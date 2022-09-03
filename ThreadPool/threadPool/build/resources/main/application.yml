@@ -1,0 +1,6 @@
+server:
+  tomcat:
+    threads:
+      max: 2 # 생성할 수 있는 thread 총 개수
+      min-spare : 2 # 항상 활성화 되어있는(idle) thread의 개수
+    accept-count: 1 # 작업 큐의 사이즈
