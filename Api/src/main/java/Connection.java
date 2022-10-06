@@ -113,12 +113,12 @@ public class Connection {
             conn.setRequestProperty(connAuth, TokenManager.getInstance().getToken());
             conn.setDoOutput(true);
             conn.setDoInput(true);
-//            BufferedWriter bw = new BufferedWriter((new OutputStreamWriter(conn.getOutputStream()))); // 이 부분
+            BufferedWriter bw = new BufferedWriter((new OutputStreamWriter(conn.getOutputStream()))); // 이 부분
             JSONObject commands = new JSONObject();
             commands.put("commands", commandArray);
 //            System.out.println("나와라 : "+commandArray);
-//            bw.write(commands.toString()); // 이 부분
-//            bw.flush(); // 이부분
+            bw.write(commands.toString()); // 이 부분
+            bw.flush(); // 이부분
             int responseCode = conn.getResponseCode();
             if(responseCode == 400) System.out.println("400 : Cant");
             else if(responseCode == 401) System.out.println("401: X_AUTH_TOKEN Header Error");
