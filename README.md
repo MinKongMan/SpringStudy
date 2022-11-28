@@ -22,6 +22,6 @@
   > 5. HandlerAdpater가 controller의 비지니스 로직을 호출하고 결과를 ModelAndView객체에 담아서 Dispatcher Servlet으로 return
   > 6. Dispatcher Servlet이 ViewResolver를 활용하여 결과를 보여줄 View를 가져온다.
   > 7. View 객체에게 Dispatcher Servlet이 응답 결과 생성을 요청한다. 
-    '''
+    ```
       HandlerMapping은 원하는 handler(request URL에 알맞는 메소드)를 가져오는 역할
-    '''
+    ```
