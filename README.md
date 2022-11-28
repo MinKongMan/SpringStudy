@@ -12,6 +12,7 @@
   ### Was 써버란?
   - DB 조회나 로직 처리를 요구하는 동적 컨텐츠를 제공하기 위해 만들어진 Application Server
   - Web Container 혹은 Servlet Container라고 불림.
+  > ##### Apache
 
   ### Servlet이란?
   - Dynamic Web Page를 만들 때 사용되는 자바 기반의 웹 애플리케이션 프로그래밍 기술
