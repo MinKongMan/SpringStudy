@@ -14,3 +14,7 @@
   
 # Dispatcher Servlet
   - 디스패처 서블릿은 클라이언트의 모든 요청을 한 곳으로 받아 처리한다. 요청에 맞는 Handler로 요청을 전달하고 실행 결과를 <br/>Http Response 형태로 만들어서 반환한다.
+  - ex) Spring MVC에서는 클라이언트의 요청을 디스패처 서블릿이 받아 Handler Mapping이나 Controller에 전달하고<br/> 
+    처리된 값을 Model형태로 받는다.<br/>
+    최종적으로 클라이언트에게 보여주고자 하는 페이지 포맷에 따라 View Resolver가 페이지(View를 생성하고<br/>
+    페이지에 모델을 포함시켜 반환하게 된다.
